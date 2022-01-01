@@ -1,18 +1,11 @@
 {
     "name": "TTS",
-    "description":"Easyy.",
-    "website": "https://t.me/deryluserbothelp",
+    "description": "Tts",
+    "website": "https://0.com",
     "repository": "https://github.com/derylprojects/tts",
-    "logo": "https://i.ibb.co/BPFxDXx/photo-2021-07-09-11-55-52.jpg",
     "env": {
-          "TOKEN": {
-                "description": "Token botmu dari botfather",
-                "required": true
-          },
-          "CHAT_ID": {
-                "description": "Chat id groupmu",
-                "required": true
-          }
+          "CHAT_ID": {"description": "Chat id","required": true},
+          "TOKEN": {"description": "Token dari botfather","required": true}
     },
     "buildpacks": [
       {"url": "heroku/python"}
