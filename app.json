@@ -7,10 +7,12 @@
     "env": {
           "TOKEN": {
                 "description": "Token botmu dari botfather",
-                "required": true},
+                "required": true
+          },
           "CHAT_ID": {
                 "description": "Chat id groupmu",
-                "required": true}
+                "required": true
+          }
     },
     "buildpacks": [
       {"url": "heroku/python"}
