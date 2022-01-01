@@ -1,0 +1,21 @@
+{
+    "name": "FileKeLink",
+    "description": "Mudsh.",
+    "website": "https://t.me/deryluserbothelp",
+    "repository": "https://github.com/derylprojects/bottglink",
+    "logo": "https://i.ibb.co/BPFxDXx/photo-2021-07-09-11-55-52.jpg",
+    "env": {
+          "TOKEN": {"description": "Token botmu dari botfather","required": true}
+          "CHAT_ID": {"description": "Chat id groupmu","required": true}
+    },
+    "buildpacks": [
+      {"url": "heroku/python"}
+    ],
+    "formation": {
+      "worker": {
+        "quantity": 1,
+        "size": "free"
+      }
+    },
+    "stack": "heroku-20"
+  }
