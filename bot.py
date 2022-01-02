@@ -25,7 +25,7 @@ def start(update: Update, context: CallbackContext) -> None:
     if str(update.message.chat_id) == str(CHAT_ID):
         update.message.reply_text("Hai, subscribe ke deryl and darren channel ya 😁😁")
 
-def say(update: Update, context: CallbackContext) -> None:
+def tts(update: Update, context: CallbackContext) -> None:
     if str(update.message.chat_id) == str(CHAT_ID):
         context.bot.send_chat_action(chat_id=update.effective_message.chat_id, action=ChatAction.RECORD_AUDIO)
         audio_path = text_to_audio(" ".join(filter(lambda x:x[0]!='/', update.message.text.split())))
@@ -42,7 +42,7 @@ def main():
     updater = Updater(TOKEN, use_context=True)
     dispatcher = updater.dispatcher
     dispatcher.add_handler(CommandHandler('start', start))
-    dispatcher.add_handler(CommandHandler('tts', say))
+    dispatcher.add_handler(CommandHandler('tts', tts))
 
     updater.start_polling()
 
