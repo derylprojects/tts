@@ -23,7 +23,7 @@ def text_to_audio(message_text: str):
 
 def start(update: Update, context: CallbackContext) -> None:
     if str(update.message.chat_id) == str(CHAT_ID):
-        update.message.reply_text("Hi!\nSubscribe ke channel kami ya.\nhttps://www.youtube.com/channel/UCPd9_ZT97R471WWRS01q9lg")
+        update.message.reply_text("Hai, subscribe ke deryl and darren channel ya 😁😁")
 
 def say(update: Update, context: CallbackContext) -> None:
     if str(update.message.chat_id) == str(CHAT_ID):
